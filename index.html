@@ -1,25 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testando essa bagaça</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarketPro</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
-<body>
-    .,----.
-(.Oi.!.)................................-., <br>
-.`---´_...............................\..\ <br>
-........(_)...............................\..\ <br>
-...........O...............................|..| <br>
-.............o.............................|..| <br>
-................./\----/\..._.,-.-.-.._.|..| <br>
-................/.^...^..\,'..............`..; <br>
-...............(..O...O...)...................; <br>
-................`..=o=_,'...................\ <br>
-................../.........._,----..__........\ <br>
-................./.._....,'............`-..`.-..\ <br>
-................/.,'./..,'....................\.\.\..\ <br>
-..............././../.,'.....................(,_)(,_) <br>
-..............(,;)..(,,)...... <br>
+
+<body class="bg-dark text-white">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-purple">MarketPro</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link">Início</a></li>
+          <li class="nav-item"><a class="nav-link">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link">Conta</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="container mt-4">
+    <div class="p-4 bg-secondary rounded text-center">
+      <h1 class="fw-bold">As melhores ofertas do dia</h1>
+      <p>Produtos com qualidade e preço baixo</p>
+      <button class="btn btn-light">Ver ofertas</button>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="container mt-5">
+    <h3 class="mb-3">Categorias</h3>
+
+    <div class="row g-3 text-center">
+      <div class="col-6 col-md-3">
+        <div class="bg-black p-3 rounded">Eletrônicos</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="bg-black p-3 rounded">Roupas</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="bg-black p-3 rounded">Games</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="bg-black p-3 rounded">Casa</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="container mt-5">
+    <h3 class="mb-3">Produtos em destaque</h3>
+
+    <div class="row g-4">
+
+      <!-- PRODUTO 1 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card bg-black text-white h-100">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,90</p>
+            <button class="btn btn-light w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUTO 2 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card bg-black text-white h-100">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produto 2</h5>
+            <p class="card-text">R$ 299,90</p>
+            <button class="btn btn-light w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUTO 3 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card bg-black text-white h-100">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produto 3</h5>
+            <p class="card-text">R$ 99,90</p>
+            <button class="btn btn-light w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUTO 4 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card bg-black text-white h-100">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produto 4</h5>
+            <p class="card-text">R$ 149,90</p>
+            <button class="btn btn-light w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-center mt-5 p-4">
+    <p>© 2026 MarketPro - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
